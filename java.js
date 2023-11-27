@@ -1,7 +1,7 @@
 
 let answer=0;
 function getNumberPairs(){
-
+    document.getElementById("yes").innerHTML=" "
 
 const numArray= [1,2,3,4,5]
 let num2=0;
@@ -47,6 +47,9 @@ return answer;
 function answerClicked(id){
    console.log(document.getElementById(id).innerHTML)
    if (document.getElementById(id).innerHTML==answer) {
-    console.log("yess")
+    document.getElementById("yes").innerHTML="Ügyes vagy"
+   }
+   else{
+    document.getElementById("yes").innerHTML="Sajnos nem jó válasz"
    }
 }
